@@ -1,10 +1,10 @@
 #include "Player.h"
 #include <Arduino.h>
 
-#define LEFT_BUTTON 32
-#define RIGHT_BUTTON 33
-#define UP_BUTTON 25
-#define DOWN_BUTTON 26
+#define LEFT_BUTTON 4
+#define RIGHT_BUTTON 14
+#define UP_BUTTON 15
+#define DOWN_BUTTON 19
 
 Player::Player(MD_MAX72XX* matrix) : mx(matrix), x(0), y(0) {}
 
