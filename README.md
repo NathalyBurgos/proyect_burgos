@@ -52,37 +52,22 @@ El juego se visualiza en una **matriz LED 32x32**, formada por cuatro matrices d
 
 📊 Durante el juego, el monitor serial registra el progreso, permitiendo revisar logros y eventos en tiempo real.  
 
-### ⚙️ **Especificaciones**  
-
 #### **🔧 Componentes**  
-- ESP32  
-- Matriz LED 32x32  
-- 4 botones de movimiento  
-- Botón de encendido/pausa  
-- Potenciómetro  
-- Batería recargable (dos celdas de 3.4 V en serie)  
-- DF Mini Player  
-- Altavoz  
-- Pantalla LCD  
-
+-ESP32: Microcontrolador principal encargado de gestionar la matriz LED, procesar los movimientos y controlar los periféricos.
+-Matriz LED 32x32: Pantalla formada por cuatro matrices de 8x32 para representar la "rana" y los obstáculos en el juego.
+-4 botones de movimiento: Permiten controlar la dirección de la rana (arriba, abajo, izquierda y derecha).
+-Botón de encendido/pausa: Inicia o detiene el juego según sea necesario.
+-Potenciómetro: Ajusta el volumen de los efectos sonoros.
+-Batería recargable: Dos celdas de 3.4 V en serie para alimentar el sistema.
+-DF Mini Player: Controla la reproducción de sonidos almacenados.
+-Altavoz: Emite los sonidos del juego, como tonos de victoria o colisión.
+-Pantalla LCD: Muestra mensajes clave como "Game Over", "¡Ganador!" y el puntaje.
 
 ### 🔍 **Trabajos Relacionados**  
 1. **Tetris con ESP32:**  
    - Juego desarrollado en una pantalla OLED utilizando el protocolo **I2C** para la comunicación.  
 2. **Snake con Arduino:**  
    - Juego *Snake* en una matriz LED 8x8 controlado por joystick y Arduino Uno, utilizando multiplexación para manejar los LEDs.  
-
-## 🛠️ **Descripción de Componentes**  
-
-### **ESP32**  
-- **💡 Función:**  
-  - Microcontrolador principal encargado de gestionar la matriz LED, procesar movimientos y controlar las interacciones.  
-- **✨ Características destacadas:**  
-  - Procesador dual-core de 32 bits.  
-  - Conectividad Wi-Fi y Bluetooth.  
-  - Compatible con SPI, I2C y UART.  
-- **📡 Protocolo utilizado:**  
-  - La comunicación con la matriz LED usa **SPI**, permitiendo una transferencia rápida de datos.  
 
 
 ## 🎨 **Alternativas de Diseño**  
